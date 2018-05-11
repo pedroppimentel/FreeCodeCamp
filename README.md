@@ -1,5 +1,5 @@
 # FreeCodeCamp
-FreeCodeCamp Projects
+FreeCodeCamp Projects using HTML, CSS (+Bootstrap 4), Javascript
 
 Repositório com os projetos feitos no FreeCodeCamp (https://www.freecodecamp.org)
 
