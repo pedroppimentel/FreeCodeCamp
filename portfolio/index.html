@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
   <link rel='stylesheet prefetch' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'>
 
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/style.css">
 
   
 </head>
@@ -18,7 +19,7 @@
 
   <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-main-nav">
+    <nav class="navbar navbar-expand-lg bg-main-nav fixed-top">
       <a class="navbar-brand font-weight-bold" href="#">EAE!</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
@@ -40,16 +41,66 @@
   </header>  
   
   <div class="part1" id="Sobre">
-    
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <blockquote class="blockquote" style="padding-top: 40vh; padding-left: 20vh;">
+        <p class="mb-0">"Uma bela frase aqui..."</p>
+  <footer class="blockquote-footer">Seu belo <cite title="Source Title">Nome</cite></footer>
+      </blockquote>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <img src="https://www.homemmaquina.com.br/wp-content/uploads/2015/03/demo-img-1-3-1024x1024.png" class="img-thumbnail rounded-circle img-tam-5">
+      </div>
+    </div>
   </div>
   
   <div class=" part2" id="Port">
-    <a id="portfolio"></a>
-
+    <div class="card-deck vh-right-25">
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Titulo</h5>
+          <p class="card-text">Imagem e descrição do que foi feito no seu trabalho.</p>
+          <p class="card-text"><small class="text-muted">Pequena legenda se julgar agradável</small></p>
+        </div>
+      </div>
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Título</h5>
+        <p class="card-text">Imagem e descrição do que foi feito no seu trabalho.</p>
+        <p class="card-text"><small class="text-muted">Pequena legenda se julgar agradável</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Título</h5>
+        <p class="card-text">Imagem e descrição do que foi feito no seu trabalho.</p>
+        <p class="card-text"><small class="text-muted">Pequena legenda se julgar agradável</small></p>
+      </div>
+    </div>      
+    </div>
+    <div>
+      <blockquote class="blockquote text-white" style="padding-top: 20vh; padding-left: 10vh;">
+        <p class="mb-0">Espaço para seus trabalhos já realizados ou em andamento...</p>
+      </blockquote>
+    </div>    
   </div>
   
   <div class="part3" id="Contato">
-    <a id="contact"></a>
+    <div class="row justify-content-center" style="padding-top: 20vh">
+      <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+        <a href="#" target=_blank><i class="fab fa-github" style="font-size: 6rem;"></i></a>
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+        <a href="#" target=_blank><i class="fab fa-twitter" style="font-size: 6rem;"></i></a>
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+        <a href="#" target=_blank><i class="fab fa-facebook" style="font-size: 6rem;"></i></a>
+      </div>      
+    </div>
 
   </div>
 </body>
@@ -60,7 +111,10 @@
 
   
 
-    <script  src="index.js"></script>
+    <script  src="js/index.js"></script>
+
+
+
 
 </body>
 
