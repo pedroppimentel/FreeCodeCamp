@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Permanent+Marker');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #0072b2;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 7em;
+  margin: 0;
+  text-align: center;
+}
+
+article {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.sv-title-shadow {
+  text-shadow: 3px 3px black;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 900px;
+  min-width: 840px;
+  background-color: #eee;
+  box-shadow: 3px 3px 5px 3px black;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+header > h3 {
+  text-align: center;
+}
+
+.sv-form-block {
+  height: 100%;
+  overflow:hidden;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.sv-form-questions {
+	float: left;
+	text-align: right;
+	width: 49%;
+}
+
+.sv-form-answers {
+  float: right;
+	text-align: left;
+	width: 49%;
+}
+
+.sv-form-answers > ul{
+  list-style: none;
+}
+
+.sv-form-radio {  
+  margin-left: -35px;
+}
+
+label {
+  font-size: 1.15em;
+}
+
+button, input, select {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+input[type=text] {
+  width : 95%;
+  margin: 0;
+}
+
+.sv-bold {
+  font-weight: bold;
+}
+
+
+/* Title Animation - BEGIN */
+
+#anim-l1 {
+  animation-name: run-1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l2 {
+  animation-name: run-2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l3 {
+  animation-name: run-3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l4 {
+  animation-name: run-4;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l5 {
+  animation-name: run-5;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l6 {
+  animation-name: run-6;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l7 {
+  animation-name: run-7;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l8 {
+  animation-name: run-8;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l9 {
+  animation-name: run-9;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l10 {
+  animation-name: run-10;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l11 {
+  animation-name: run-11;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#anim-l12 {
+  animation-name: run-12;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes run-1 {
+  8.33% {
+    color: #f80c12;
+  }
+}
+
+@keyframes run-2 {
+  16.66% {
+    color: #ff3311;
+  }
+}
+
+@keyframes run-3 {
+  24.99% {
+    color: #ff4422;
+  }
+}
+
+@keyframes run-4 {
+  33.32% {
+    color: #ff6644;
+  }
+}
+
+@keyframes run-5 {
+  41.65% {
+    color: #ff9933;
+  }
+}
+
+@keyframes run-6 {
+  49.98% {
+    color: #feae2d;
+  }
+}
+
+@keyframes run-7 {
+  58.31% {
+    color: #d0c310;
+  }
+}
+
+@keyframes run-8 {
+  66.64% {
+    color: #69d025;
+  }
+}
+
+@keyframes run-9 {
+  74.97% {
+    color: #12bdb9;
+  }
+}
+
+@keyframes run-10 {
+  83.30% {
+    color: #4444dd;
+  }
+}
+
+@keyframes run-11 {
+  91.63% {
+    color: #3311bb;
+  }
+}
+
+@keyframes run-12 {
+  99.96% {
+    color: #442299;
+  }
+}
+
+/* Title Animation - END */

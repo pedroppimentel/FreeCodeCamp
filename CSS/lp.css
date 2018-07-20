@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700');
+
+body {
+  font-family: 'PT Sans Caption', sans-serif;
+  background-color: #e7eef4;
+}
+
+h1 {
+  font-size: 3.6em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 500px) 1fr;
+  grid-template-rows: repeat(3,auto);
+  grid-row-gap: 5px;
+  grid-template-areas:
+    "e1 logo header header e2"
+    "e3 body1 body1 body2 e4"
+    "footer footer footer footer footer";
+}
+
+.lp-e1{
+  grid-area: e1;
+  background-color: #003b6f;
+}
+
+.lp-e2{
+  grid-area: e2;
+  background-color: #003b6f;
+}
+
+.lp-header {
+  grid-area: header;
+  background-color: #003b6f;
+  text-align: left;
+  color: #FFF;
+  text-shadow: 2px 3px black;
+}
+
+.lp-header > h1 {
+  margin-top: 10px;
+}
+.lp-header > h2 {
+  margin-bottom: 20px;
+}
+
+.lp-main-mark {
+  grid-area: body1;
+  text-align: center;
+  background-color: #dde4ea;
+  margin: 5px;
+}
+
+.lp-main-mark > h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.lp-main-mark-list {
+  margin-top: 20px;
+  font-size: 1.1em;
+  line-height: 110%;
+}
+
+.lp-span {
+  font-weight: bold;
+}
+
+.lp-main-form {
+  grid-area: body2;
+  text-align: center;
+  background-color: #dde4ea;
+  border: 2px solid #003b6f;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.lp-main-form > form {
+  margin: 20px 10px;
+}
+
+.lp-form-label {
+  margin-bottom: 25px;
+}
+
+.lp-footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #003b6f;
+  border: 1px solid black; 
+}
+
+.lp-footer p {
+  font-size: 0.8em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lp-footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.lp-title-logo {
+  grid-area: logo;
+  background-color: #003b6f;
+}
+
+.lp-title-logo > a >img {
+  float: left;
+  width: 250px;
+}
+
+.lp-body-image {
+  margin-bottom: 5%;
+  margin-top: 3%;
+  width: 600px;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.lp-form-checkbox {
+  text-align: justify;
+}
+
+.lp-form-checkbox > label {
+  font-size: 0.9em;
+}
+
+label, button, input {
+  font: inherit;
+  font-size: 1.2em;
+  margin: 5px;
+}
+
+.lp-button-submit {
+  width: 150px;
+  height: 40px;
+  border: 1px solid transparent;
+  background-color: #eac50e;
+  border-radius: 5px;
+}
+
+.lp-button-submit:hover {
+  box-shadow: 0.5px 0.5px 5px 0.5px gray;
+  opacity: 0.7;
+}
+
+input[type='email'], input[type='text'], input[type='number'] {
+  width: 90%;
+  height: 25px;
+}
+
+.lp-footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.lp-footer-links-child {
+  color: #FFF;
+}
+
+@media (max-width: 800px) {
+  
+  .container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(5,auto);
+  grid-row-gap: 0;
+  grid-template-areas:
+    "logo"
+    "header"
+    "body1"
+    "body2"
+    "footer"
+  }
+  
+  .lp-title-logo > a > img{
+    display: block;
+    margin-left: 28%;
+  }
+  
+  .lp-header {
+    text-align: center;
+  }
+}

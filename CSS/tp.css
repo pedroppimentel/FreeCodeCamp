@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #e2d9b5;
+}
+
+h1 {
+  font-size: 7em;
+}
+
+h2 {
+  font-size: 6em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  color: #ea3a3a;
+  font-weight: bold;
+}
+
+a:hover {
+  color: black;
+}
+
+footer {
+  text-align: center;
+}
+
+small {
+  font-size: 0.9em;
+}
+
+.tribp-title {
+  text-shadow: 3px 3px 0px gray;
+}
+
+.container {
+  box-shadow: 2px 2px 2px 2px black;
+  border: 1px solid #fff;
+  border-radius: 15% 15% 5% 5%;
+  min-height:300px;
+  min-width:600px;
+  margin: 60px 70px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto-fit,1fr));
+  grid-template-rows: repeat(4, minmax(auto-fit,1fr));
+  grid-gap: 50px;
+  
+  grid-template-areas:
+    "header header header"
+    "col1 col2 col3"
+    "col4 col5 col6"
+    "ft1 ft2 ft3";
+}
+
+.tribp-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  grid-area: header;
+}
+
+.tribp-header > h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+[class*="tribp-img-"] > img {
+  width: 100%;
+  height: auto;
+}
+
+.tribp-img-1 {
+  grid-area: col1;
+  margin-left: 10px;
+}
+
+.tribp-text-1 {
+  grid-area: col2;
+}
+
+.tribp-text-1-2 {
+  grid-area: col3;
+  margin-right: 10px;
+}
+
+.tribp-img-2 {
+  grid-area: col6;
+  margin-right: 10px;
+}
+
+.tribp-text-2 {
+  grid-area: col4;
+  margin-left: 10px;
+}
+
+.tribp-text-2-2 {
+  grid-area: col5;
+}
+
+.tribp-footer-donate {
+  grid-area: ft1;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.tribp-footer-contact {
+  grid-area: ft2;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.tribp-footer-news {
+  grid-area: ft3;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.tribp-text-center {
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .container {
+    grid-template-columns: 1 minmax(auto-fit,1fr));
+    grid-template-rows: repeat(10, minmax(auto-fit,1fr));
+    grid-gap: 50px;    
+    border-radius: 0;
+    
+    grid-template-areas:
+      "header"
+      "col1"
+      "col2"
+      "col3"
+      "col6"
+      "col4"
+      "col5"
+      "footer"
+      "footer2"
+      "footer3";
+  }
+  
+  .tribp-footer-donate {
+    grid-area: footer;
+    justify-self: center;
+  }
+
+  .tribp-footer-contact {
+    grid-area: footer2;
+    justify-self: center;
+  }
+  
+  .tribp-footer-news {
+    grid-area: footer3;
+    justify-self: center;
+  }  
+  
+  [class*="tribp-text-"] {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+  }
+
+}
